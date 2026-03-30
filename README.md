@@ -1,6 +1,12 @@
 # Hyper-Local Civic Intelligence Platform
+A full-stack web application that detects nearby public infrastructure projects, visualizes them on interactive maps, and explains their real-world impact using geospatial data. Production-oriented civic intelligence stack for verified Indian public-infrastructure projects. The app detects device location, finds nearby projects location , renders them on a multi-mode map, and explains civic impact with source-linked project detail.
 
-Production-oriented civic intelligence stack for verified Indian public-infrastructure projects. The app detects device location, finds nearby projects through a geospatial API, renders them on a multi-mode map, and explains civic impact with source-linked project detail.
+Features
+📍 Live Location Detection – Finds projects near the user
+🗺️ Interactive Maps – Visualize infrastructure with map layers
+📊 Impact Insights – Understand real-world effects of projects
+🔔 Geo Alerts – Get notified about nearby developments
+🧠 Smart Data Processing – Clean and structured project insights
 
 ## What Ships
 
@@ -49,18 +55,21 @@ npm run build
 ```
 
 ## Key Files
+## 🔑 Key Files
 
-- [`src/App.jsx`](/Users/charan/Downloads/indiainno-main/src/App.jsx): main operational workspace
-- [`src/components/MapCanvas.jsx`](/Users/charan/Downloads/indiainno-main/src/components/MapCanvas.jsx): map rendering, clustering, selection, user marker
-- [`src/components/GeoFenceNotification.jsx`](/Users/charan/Downloads/indiainno-main/src/components/GeoFenceNotification.jsx): session-scoped nearby alerts
-- [`server/services/projectService.js`](/Users/charan/Downloads/indiainno-main/server/services/projectService.js): project list, nearby geo search, admin project creation
-- [`server/routes/projects.js`](/Users/charan/Downloads/indiainno-main/server/routes/projects.js): project API routes
-- [`docs/architecture.md`](/Users/charan/Downloads/indiainno-main/docs/architecture.md): architecture, folder layout, deployment
-- [`docs/data-sourcing.md`](/Users/charan/Downloads/indiainno-main/docs/data-sourcing.md): source methodology and geo-anchor rules
+- [App.jsx](src/App.jsx) – Main application workspace  
+- [MapCanvas.jsx](src/components/MapCanvas.jsx) – Map rendering  
+- [GeoFenceNotification.jsx](src/components/GeoFenceNotification.jsx) – Alerts  
+- [projectService.js](server/services/projectService.js) – Backend logic  
+- [projects.js](server/routes/projects.js) – API routes  
+- [architecture.md](docs/architecture.md) – Architecture  
+- [data-sourcing.md](docs/data-sourcing.md) – Data sourcing  
 
 ## Notes
 
 - The seed catalogue uses verified project identities only. Missing source fields stay `unknown`.
 - Coordinates are representative anchors for named stations, campuses, facilities, or corridor midpoints. They are not survey-grade parcel coordinates.
 - The backend runs with an in-memory fallback when `DATABASE_URL` is not configured; production mode should use Postgres/PostGIS.
-# astra
+# astra Bharat
+Gowtham
+GitHub: https://github.com/gowthamk18
